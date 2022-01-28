@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Testing
+{% endblock %}
+
+{% block body %}
+    <h1>Here's what we get when we try that...</h1>
+
+    <div>
+        <ol>
+            {% for item in list %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ol>
+        <br>
+        <h2>The chosen one:</h2>
+        <p>{{ picked }}</p>
+    </div>
+
+{% endblock %}

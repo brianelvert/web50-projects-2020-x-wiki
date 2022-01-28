@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }} Already Exists
+{% endblock %}
+
+{% block body %}
+    <h1>Error: A wiki for {{ title }} already exists.</h1>
+
+    <p>Consider editing the existing wiki or disambiguating your title.</p>
+
+{% endblock %}
